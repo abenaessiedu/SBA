@@ -12,7 +12,7 @@
     }
 */
 
-const trainers = [
+const blackFounders = [
     {
         id: 0,
         name: "Blue",

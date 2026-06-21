@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, I am an EJS View!</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Hello from a View, Office Hours!</h1>
+    <% if (name === "Quinn") { %>
+    <p>The name sent to this view is <%= name %></p>
+    <% } else { %>
+    <p>Welcome Stranger!</p>
+    <% } %>
+    <form action="/api/blackOwnedBrands" method="POST">
+    <!-- <form> -->
+        <input type="number" name="id" placeholder="Black Owned Brands ID#" />
+        <input type="text" name="name" placeholder="BlackFounder Name" />
+        <input type="text" name="type1" placeholder="BlackOwnedBrands Type 1" />
+        <input type="text" name="type2" placeholder="Black Owned BrandsType 2" />
+        <button>Submit</button>
+    </form>
+</body>
+</html>

@@ -1,10 +1,10 @@
 import express from "express";
-import pokemon from "../data/pokemon.js";
+import blackOwnedBrands from "../data/blackOwnedBrands.js";
 import { types } from "../data/types.js";
 
 const router = express.Router();
 
-// http://localhost:port/api/pokemon
+// http://localhost:port/api/backownedIndex
 
 router.post("/", (req, res) => {
   console.log("We got to the Post route!");
@@ -33,7 +33,7 @@ types: [type1, type2]
     types: types,
   };
 
-  pokemon.push(transformedData);
+  blackOwnedBrands.push(transformedData);
   res.status(201).send(transformedData);
 });
 
@@ -41,10 +41,10 @@ types: [type1, type2]
 router.get("/type/:type", (req, res) => {
   if (req.params.type in types) {
     // const filteredPokemon = pokemon.filter(p => p.types.find(type => type === req.params.type.toLowerCase()))
-    const filteredPokemon = pokemon.filter((p) =>
+    const filteredblackOwnedBrands = blackOwnedBrands.filter((p) =>
       p.types.includes(req.params.type.toLowerCase()),
     );
-    res.status(200).json(filteredPokemon);
+    res.status(200).json(filteredblackOwnedBrands);
     // res.send("type route with type "+req.params.type)
   } else {
     res.status(404).send("Invalid Type!");
@@ -54,19 +54,19 @@ router.get("/type/:type", (req, res) => {
 
 // get a Single pokemon by ID or Name
 router.get("/:coolData", (req, res) => {
-  const foundPokemon = pokemon.find(
+  const foundblackOwnedBrands = blackOwnedBrands.find(
     (p) =>
       p.id == req.params.coolData ||
       p.name == req.params.coolData.toLowerCase(),
   );
-  if (foundPokemon) {
-    res.status(200).json(foundPokemon);
+  if (foundblackOwnedBrands) {
+    res.status(200).json(foundblackOwnedBrands);
   } else {
     res.status(404).send("No Pokemon with that Information");
   }
 });
 
 router.get("/", (req, res) => {
-  res.json(pokemon);
+  res.json(blackOwnedBrands);
 });
 export default router;
