@@ -1,353 +1,371 @@
-/*
-    Pokemon Object:
-    {
-        id: num
-        name: string
-        types: string[]
-    }
-*/
 const blackOwnedBrands = [
   {
     "id": 1,
     "name": "BEAUTY BY AD.",
-    "country": "", 
+    "country": "NIGERIA",
     "types": [
-      "grass",
-      "poison"
+      "BEAUTY",
+      "MAKEUP"
     ]
   },
   {
     "id": 2,
-    "name": "ivysaur",
-    "country": "", 
+    "name": "DANESSA MYRICKS",
+    "country": "USA",
     "types": [
-      "grass",
-      "poison"
+      "BEAUTY",
+      "MAKEUP"
     ]
   },
   {
     "id": 3,
-    "name": "venusaur",
-    "country": "", 
+    "name": "PAT MCGRATH BEAUTY",
+    "country": "U.K.",
     "types": [
-      "grass",
-      "poison"
+      "BEAUTY",
+      "MAKEUP"
     ]
   },
   {
     "id": 4,
-    "name": "charmander",
-    "country": "", 
+    "name": "NUBIAN BEAUTY",
+    "country": "NIGERIA",
     "types": [
-      "fire"
+      "BEAUTY",
+      "MAKEUP"
     ]
   },
   {
     "id": 5,
-    "name": "charmeleon",
-    "country": "", 
+    "name": "JUVIA’S PLACE",
+    "country": "NIGERIA",
     "types": [
-      "fire"
+      "BEAUTY",
+      "MAKEUP"
     ]
   },
   {
     "id": 6,
-    "name": "charizard",
-    "country": "", 
+    "name": "GLAMQUEST BEAUTY",
+    "country": "KOREA",
     "types": [
-      "fire",
-      "flying"
+      "BEAUTY",
+      "SKINCARE"
     ]
   },
   {
     "id": 7,
-    "name": "squirtle",
+    "name": "TOPICALS",
+    "country": "USA",
     "types": [
-      "water"
+      "BEAUTY",
+      "SKINCARE"
     ]
   },
   {
     "id": 8,
-    "name": "wartortle",
+    "name": "EADEM",
+    "country": "CÔTE D’VOIRE",
     "types": [
-      "water"
+      "BEAUTY",
+      "SKINCARE"
     ]
   },
   {
     "id": 9,
-    "name": "blastoise",
+    "name": "OLAMINA BOTALINCALS",
+    "country": "USA",
     "types": [
-      "water"
+      "BEAUTY",
+      "SKINCARE"
     ]
   },
   {
     "id": 10,
-    "name": "caterpie",
+    "name": "DEMOSEA",
+    "country": "USA",
     "types": [
-      "bug"
+      "BEAUTY",
+      "SKINCARE"
     ]
   },
   {
     "id": 11,
-    "name": "metapod",
+    "name": "THEBE MAGUGU",
+    "country": "SOUTH AFRICA",
     "types": [
-      "bug"
+      "FASHION",
+      "CLOTHES"
     ]
   },
   {
     "id": 12,
-    "name": "butterfree",
+    "name": "HERTUNBA",
+    "country": "NIGERIA",
     "types": [
-      "bug",
-      "flying"
+      "FASHION",
+      "CLOTHES"
     ]
   },
   {
     "id": 13,
-    "name": "weedle",
+    "name": "STUDIO BONITTA",
+    "country": "GHANA",
     "types": [
-      "bug",
-      "poison"
+      "FASHION",
+      "CLOTHES"
     ]
   },
   {
     "id": 14,
-    "name": "kakuna",
+    "name": "OR NOIR",
+    "country": "CÔTE D’VOIRE",
     "types": [
-      "bug",
-      "poison"
+      "FASHION",
+      "CLOTHES"
     ]
   },
   {
     "id": 15,
-    "name": "beedrill",
+    "name": "YOSHITA 1967",
+    "country": "KENYA",
     "types": [
-      "bug",
-      "poison"
+      "FASHION",
+      "CLOTHES"
     ]
   },
   {
     "id": 16,
-    "name": "pidgey",
+    "name": "SEVERE NATURE",
+    "country": " CANADA",
     "types": [
-      "normal",
-      "flying"
+      "FASHION",
+      "CLOTHES"
     ]
   },
   {
     "id": 17,
-    "name": "pidgeotto",
+    "name": "MENT STUDIOS",
+    "country": "USA",
     "types": [
-      "normal",
-      "flying"
+      "FASHION",
+      "CLOTHES"
     ]
   },
   {
     "id": 18,
-    "name": "pidgeot",
+    "name": "NADI BY DANI",
+    "country": "BRAZIL",
     "types": [
-      "normal",
-      "flying"
+      "FASHION",
+      "CLOTHES"
     ]
   },
   {
     "id": 19,
-    "name": "rattata",
+    "name": "MAXIMILIAN DAVIS",
+    "country": "FRANCE",
     "types": [
-      "normal"
+      "FASHION",
+      "CLOTHES"
     ]
   },
   {
     "id": 20,
-    "name": "raticate",
+    "name": "KAYADUA",
+    "country": "GHANA",
     "types": [
-      "normal"
+      "FASHION",
+      "CLOTHES"
     ]
   },
   {
     "id": 21,
-    "name": "spearow",
+    "name": "BOLAPSED",
+    "country": "NIGERIA",
     "types": [
-      "normal",
-      "flying"
+      "FASHION",
+      "SHOES"
     ]
   },
   {
     "id": 22,
-    "name": "fearow",
+    "name": "BROTHER VELLIES",
+    "country": "USA",
     "types": [
-      "normal",
-      "flying"
+      "FASHION",
+      "SHOES"
     ]
   },
   {
     "id": 23,
-    "name": "ekans",
+    "name": "AM:PM LONDON",
+    "country": "UK",
     "types": [
-      "poison"
+      "FASHION",
+      "SHOES"
     ]
   },
   {
     "id": 24,
-    "name": "arbok",
+    "name": "AMINAH ABDUL JILLIL",
+    "country": "USA",
     "types": [
-      "poison"
+      "FASHION",
+      "SHOES"
     ]
   },
   {
     "id": 25,
-    "name": "pikachu",
+    "name": "THE EKHATOR LABEL",
+    "country": "NIGERIA",
     "types": [
-      "electric"
+      "FASHION",
+      "SHOES"
     ]
   },
   {
     "id": 26,
-    "name": "raichu",
+    "name": "KITTEN CO",
+    "country": "USA",
     "types": [
-      "electric"
+      "FASHION",
+      "JEWELRY"
     ]
   },
   {
     "id": 27,
-    "name": "sandshrew",
+    "name": "NIKAO",
+    "country": "UK",
     "types": [
-      "ground"
+      "FASHION",
+      "JEWELRY"
     ]
   },
   {
     "id": 28,
-    "name": "sandslash",
+    "name": "LIVIN LAVISH",
+    "country": "CANADA",
     "types": [
-      "ground"
+      "FASHION",
+      "JEWELRY"
     ]
   },
   {
     "id": 29,
-    "name": "nidoran-f",
+    "name": "JOHNNY NELSON",
+    "country": "USA",
     "types": [
-      "poison"
+      "FASHION",
+      "JEWELRY"
     ]
   },
   {
     "id": 30,
-    "name": "nidorina",
+    "name": "OMA THE LABEL",
+    "country": "USA",
     "types": [
-      "poison"
+      "FASHION",
+      "JEWELRY"
     ]
   },
   {
     "id": 31,
-    "name": "nidoqueen",
+    "name": "ANIMA IRIS",
+    "country": "SENEGAL",
     "types": [
-      "poison",
-      "ground"
+      "FASHION",
+      "BAGS"
     ]
   },
   {
     "id": 32,
-    "name": "nidoran-m",
+    "name": "PETER LABORDE",
+    "country": "HAITI",
     "types": [
-      "poison"
+      "FASHION",
+      "BAGS"
     ]
   },
   {
     "id": 33,
-    "name": "nidorino",
+    "name": "TELFAR",
+    "country": "LIBERIA",
     "types": [
-      "poison"
+      "FASHION",
+      "BAGS"
     ]
   },
   {
     "id": 34,
-    "name": "nidoking",
+    "name": "PARALLEL STUDIO",
+    "country": "UK",
     "types": [
-      "poison",
-      "ground"
+      "FASHION",
+      "BAGS"
     ]
   },
   {
     "id": 35,
-    "name": "clefairy",
+    "name": "CIRIACO",
+    "country": "USA",
     "types": [
-      "fairy"
+      "FASHION",
+      "BAGS"
     ]
   },
   {
     "id": 36,
-    "name": "clefable",
+    "name": "MAXIMILLIAN",
+    "country": "ITALY",
     "types": [
-      "fairy"
+      "FASHION",
+      "BAGS"
     ]
   },
   {
     "id": 37,
-    "name": "vulpix",
+    "name": "MELIAN J",
+    "country": "USA",
     "types": [
-      "fire"
+      "FASHION", 
+      "SWIMWEAR"
     ]
   },
   {
     "id": 38,
-    "name": "ninetales",
+    "name": "MINA NOVSKI",
+    "country": "UK",
     "types": [
-      "fire"
+      "FASHION", 
+      "SWIMWEAR"
     ]
   },
   {
     "id": 39,
-    "name": "jigglypuff",
+    "name": "CSV NEW YORK",
+    "country": "USA",
     "types": [
-      "normal",
-      "fairy"
+       "FASHION", 
+      "SWIMWEAR"
     ]
   },
   {
     "id": 40,
-    "name": "wigglytuff",
+    "name": "TOFE",
+    "country": "UK",
     "types": [
-      "normal",
-      "fairy"
+       "FASHION", 
+      "SWIMWEAR"
     ]
   },
   {
     "id": 41,
-    "name": "zubat",
+    "name": "RIOT SWIM",
+    "country": "USA",
     "types": [
-      "poison",
-      "flying"
-    ]
-  },
-  {
-    "id": 42,
-    "name": "golbat",
-    "types": [
-      "poison",
-      "flying"
-    ]
-  },
-  {
-    "id": 43,
-    "name": "oddish",
-    "types": [
-      "grass",
-      "poison"
-    ]
-  },
-  {
-    "id": 44,
-    "name": "gloom",
-    "types": [
-      "grass",
-      "poison"
-    ]
-  },
-  {
-    "id": 45,
-    "name": "vileplume",
-    "types": [
-      "grass",
-      "poison"
+      "FASHION", 
+      "SWIMWEAR"
     ]
   }
 ]
