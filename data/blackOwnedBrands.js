@@ -10,7 +10,7 @@ const blackOwnedBrands = [
   },
   {
     "id": 2,
-    "name": "DANESSA MYRICKS",
+    "name": "DANESSA MYRICKS BEAUTY",
     "country": "USA",
     "types": [
       "BEAUTY",
@@ -19,7 +19,7 @@ const blackOwnedBrands = [
   },
   {
     "id": 3,
-    "name": "PAT MCGRATH BEAUTY",
+    "name": "PAT MCGRATH LABS",
     "country": "U.K.",
     "types": [
       "BEAUTY",
@@ -28,7 +28,7 @@ const blackOwnedBrands = [
   },
   {
     "id": 4,
-    "name": "NUBIAN BEAUTY",
+    "name": "NUBAN BEAUTY",
     "country": "NIGERIA",
     "types": [
       "BEAUTY",
