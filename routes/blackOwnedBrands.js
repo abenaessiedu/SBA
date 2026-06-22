@@ -4,24 +4,14 @@ import { types } from "../data/types.js";
 
 const router = express.Router();
 
-// http://localhost:port/api/backownedIndex
+// http://localhost:port/api/backownedIndex 
 
 router.post("/", (req, res) => {
-  console.log("We got to the Post route!");
+  if(!req.body.id || !req.body.name || !req.body.type1 || req.body.type1) {
+    return res.status(400).send("Some Information is Missing");
+  }
+  console.log("WE GOT THE DATAAA!");
   console.log(req.body);
-  /* { DATA WE ARE GETTING
-id: ,
-name: ,
-type1: ,
-type2:
-}
-
-NEEDS TO LOOK LIKE:
-{ id: ,
-name: ,
-types: [type1, type2]
-}
-*/
 
   const types = [];
   types.push(req.body.type1);
@@ -37,7 +27,7 @@ types: [type1, type2]
   res.status(201).send(transformedData);
 });
 
-// /type/banana
+// /type/yadayada
 router.get("/type/:type", (req, res) => {
   if (req.params.type in types) {
     // const filteredPokemon = pokemon.filter(p => p.types.find(type => type === req.params.type.toLowerCase()))
@@ -62,7 +52,7 @@ router.get("/:coolData", (req, res) => {
   if (foundblackOwnedBrands) {
     res.status(200).json(foundblackOwnedBrands);
   } else {
-    res.status(404).send("No Pokemon with that Information");
+    res.status(404).send("There isn't a brand with that information, try again");
   }
 });
 

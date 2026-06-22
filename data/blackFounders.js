@@ -19,7 +19,7 @@ const blackFounders = [
         brand: [
             {
                 id: 1,
-                Name: "BEAUTY BY AD",
+                name: "BEAUTY BY AD",
                 Founded: 2017,
             },
         ]
