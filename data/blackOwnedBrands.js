@@ -230,7 +230,7 @@ const blackOwnedBrands = [
     "country": "USA",
     "types": [
       "FASHION",
-      "JEWELRY"
+      "ACCESSORIES"
     ]
   },
   {
@@ -239,7 +239,7 @@ const blackOwnedBrands = [
     "country": "UK",
     "types": [
       "FASHION",
-      "JEWELRY"
+      "ACCESSORIES"
     ]
   },
   {
@@ -248,7 +248,7 @@ const blackOwnedBrands = [
     "country": "CANADA",
     "types": [
       "FASHION",
-      "JEWELRY"
+      "ACCESSORIES"
     ]
   },
   {
@@ -257,7 +257,7 @@ const blackOwnedBrands = [
     "country": "USA",
     "types": [
       "FASHION",
-      "JEWELRY"
+      "ACCESSORIES"
     ]
   },
   {
@@ -266,7 +266,7 @@ const blackOwnedBrands = [
     "country": "USA",
     "types": [
       "FASHION",
-      "JEWELRY"
+      "ACCESSORIES"
     ]
   },
   {
