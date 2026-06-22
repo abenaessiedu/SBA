@@ -1,11 +1,4 @@
-/*
-    types{
-        [type of attack]:
-        {   
-            [type of defense]: multiplier
-        }
-    }
-*/
+
 
 export const types = {
     fashion: {

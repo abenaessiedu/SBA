@@ -466,4 +466,4 @@ const blackFounders = [
     }
 ]
 
-export default trainers
+export default blackFounders

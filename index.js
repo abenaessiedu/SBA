@@ -17,17 +17,23 @@ app.get('/', (req, res) => {
 });
 app.set("view engine", "ejs")
 
-app.use(express.urlencoded())
-app.use(express.static('public'))
+app.use(express.urlencoded());
+app.use(express.static('public'));
+app.use(express.json()); 
+app.use(express.urlencoded({extended: true})); 
+
+
 app.use("/api/BOBrands", blackOwnedBrandsRoutes)
 
-app.get("/", (req, res) =>{
-    res.send("In it to Win it")
-})
 
 app.get("/views", (req, res)=>{
     // res.render("home.ejs", {name: "HOMEBASE"})
     res.render("home.ejs", {name: "HOMEBASE"})
+})
+
+app.use((err, req, next)=> {
+    console.error(err.stack); 
+    res.status(404).send("Something broke!"); 
 })
 
 
